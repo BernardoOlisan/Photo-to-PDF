@@ -27,9 +27,9 @@
     "dev:server": "nodemon -r dotenv/config ./server/index.js",
     "start:server": "SET NODE_ENV=production & node ./server/index.js",
     "dev:client": "react-scripts start",
-    "dev": "concurrently \"yarn run dev:server\" \"yarn run dev:client\"",
-    "build": "mkdir dist && yarn run build:client && mv build dist",
-    "start": "yarn run start:server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "mkdir dist && npm run build:client && mv build dist",
+    "start": "npm run start:server",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
