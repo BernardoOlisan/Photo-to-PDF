@@ -1,38 +1,166 @@
-.App {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 45px;
+  color: #4285f4;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  border: 2px solid #4285f4;
+  padding: 6px 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.i-button {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.PDF {
+  width: 140px;
+  height: 50px;
+  background-color: #4285f4;
+  text-align: center;
+  font-size: 17px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  border: 0px;
   color: white;
+  font-weight: bold;
+}
+.PDF:hover {
+  background-color: #2a59a3;
+  cursor: pointer;
+}
+.PDF2 {
+  width: 140px;
+  height: 50px;
+  background-color: #4285f4;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+}
+.PDF2:hover {
+  background-color: #2a59a3;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.u-connected {
+  text-align: center;
+  font-size: 20px;
+  color: #4285f4;
+  opacity: .7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.myuser-block {
+  text-align: center;
+  line-height: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.you {
+  font-size: 20px;
+}
+.myuser {
+  font-size: 35px;
+  color: #4285f4;
+}
+
+.otheryou {
+  font-size: 17px;
+  opacity: .7;
+}
+.othermyuser {
+  font-size: 27px;
+  color: #4285f4;
+}
+
+.user-block {
+  text-align: center;
+  line-height: 10px;
+}
+.send {
+  border-radius: 20px;
+  border: 0;
+  background-color: #4285f4;
+  color: white;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  font-size: 17px;
+}
+.send:hover {
+  background-color: #2a59a3;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.peeruser {
+  color: #2a59a3;
+}
+@media screen and (min-width: 1000px) {
+  .modal-content {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+.modal-content p {
+  font-size: 18px;
+}
+.modal-content h1 {
+  font-size: 30px;
+}
+@media screen and (max-width: 700px) {
+  .modal-content h1 {
+    font-size: 25px;
   }
+  .modal-content p {
+    font-size: 17px;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
